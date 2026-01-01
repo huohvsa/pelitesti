@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laikukas kissa - juoksupeli</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <header>
+        <h1>Laikukas kissa - juoksupeli</h1>
+        <p>Paina välilyöntiä tai klikkaa hypätäksesi.</p>
+      </header>
+      <div class="hud">
+        <div>Parhaat: <span id="best-score">0</span></div>
+        <div>Pisteet: <span id="score">0</span></div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="game" width="900" height="260" aria-label="Kissajuoksupeli"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="overlay-card">
+            <h2 id="overlay-title">Paina välilyöntiä</h2>
+            <p id="overlay-text">Aloita peli ja väistä esteet.</p>
+            <button id="start-button">Aloita</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
